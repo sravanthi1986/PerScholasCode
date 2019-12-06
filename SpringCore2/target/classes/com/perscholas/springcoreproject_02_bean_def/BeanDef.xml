@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+	<bean id="Person" class="com.perscholas.springcoreproject_02.models.Person">
+	<constructor-arg ref="englishGreeting"/>
+	</bean>
+	<bean id="Person1" class="com.perscholas.springcoreproject_02.models.Person">
+	<constructor-arg ref="spanishGreeting"/>
+	</bean>
+	<bean id="Person2" class="com.perscholas.springcoreproject_02.models.Person">
+	<constructor-arg ref="frenchGreeting"/>
+	</bean>
+	
+     <bean id="englishGreeting" class="com.perscholas.springcoreproject_02_greeting_interface_implement.EnglishGreeting"/>
+     <bean id="spanishGreeting" class="com.perscholas.springcoreproject_02_greeting_interface_implement.SpanishGreeting"/>
+     <bean id="frenchGreeting" class="com.perscholas.springcoreproject_02_greeting_interface_implement.FrenchGreeting"/>
+     
+       
+</beans>
